@@ -4,26 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>TaskFlow</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Task Manager</h1>
+
+    <!-- ================= NAVBAR + HERO ================= -->
+
+    <header class="hero">
+
+        <nav>
+
+            <div class="logo">
+                <h2>TaskFlow</h2>
+            </div>
+
+            <button id="themeToggle" aria-label="Toggle Theme">
+                🌙
+            </button>
+
+        </nav>
+
+        <div class="hero-content">
+
+            <h1>Plan. Organize. Achieve.</h1>
+
+            <p>
+                A simple productivity dashboard for managing your daily tasks.
+            </p>
+
+        </div>
+
     </header>
+
+    <!-- ================= MAIN ================= -->
+
     <main>
-        <section class="task-input">
-            <input type="text" id="taskInput" placeholder="Enter a new task">
-            <button id="addButton">Add Task</button>
-            <button id="clearButton">Clear all</button>
+
+        <!-- Statistics -->
+
+        <section class="statistics">
+
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="pendingTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
         </section>
-        <section class="task-list">
-            <h2>Tasks</h2>
+
+        <!-- Task Form -->
+
+        <section class="task-panel">
+
+            <h2>Add New Task</h2>
+
+            <input type="text" id="taskInput" placeholder="Enter your task...">
+
+            <div class="button-group">
+
+                <button id="addButton">
+                    Add Task
+                </button>
+
+                <button id="clearButton">
+                    Clear All
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Search -->
+
+        <section class="search-filter">
+
+            <input type="text" id="searchInput" placeholder="Search tasks...">
+
+        </section>
+
+        <!-- Task List -->
+
+        <section class="task-container">
+
+            <h2>Your Tasks</h2>
+
             <ul id="taskList"></ul>
+
         </section>
+
     </main>
-    <script src="script.js"></script>
+
+    <footer>
+
+        <p>© 2026 TaskFlow | Built with HTML, CSS & JavaScript</p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

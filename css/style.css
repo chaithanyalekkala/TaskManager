@@ -1,0 +1,352 @@
+/* ===================================
+   RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===================================
+   VARIABLES
+=================================== */
+
+:root{
+
+    --primary:#6366F1;
+    --primary-dark:#4F46E5;
+
+    --background:#F8FAFC;
+
+    --surface:#FFFFFF;
+
+    --text:#0F172A;
+
+    --muted:#64748B;
+
+    --border:#E2E8F0;
+
+    --shadow:0 12px 30px rgba(0,0,0,.08);
+
+    --radius:16px;
+
+}
+
+/* ===================================
+   BODY
+=================================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+}
+
+/* ===================================
+   HERO
+=================================== */
+
+.hero{
+
+    background:linear-gradient(135deg,#6366F1,#4F46E5);
+
+    color:white;
+
+    padding-bottom:120px;
+
+}
+
+/* ===================================
+   NAVBAR
+=================================== */
+
+nav{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:20px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo h2{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+#themeToggle{
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.2);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:1.2rem;
+
+    transition:.3s;
+
+}
+
+#themeToggle:hover{
+
+    transform:scale(1.08);
+
+    background:rgba(255,255,255,.35);
+
+}
+
+/* ===================================
+   HERO CONTENT
+=================================== */
+
+.hero-content{
+
+    max-width:1200px;
+
+    margin:70px auto;
+
+    padding:0 40px;
+
+}
+
+.hero-content h1{
+
+    font-size:3.5rem;
+
+    margin-bottom:15px;
+
+}
+
+.hero-content p{
+
+    width:500px;
+
+    font-size:1.1rem;
+
+    opacity:.9;
+
+}
+
+/* ===================================
+   MAIN
+=================================== */
+
+main{
+
+    max-width:1200px;
+
+    margin:-70px auto 50px;
+
+    padding:0 40px;
+
+}
+
+/* ===================================
+   STATISTICS
+=================================== */
+
+.statistics{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.stat-card{
+
+    background:var(--surface);
+
+    border-radius:var(--radius);
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.stat-card h3{
+
+    color:var(--muted);
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+/* ===================================
+   TASK PANEL
+=================================== */
+
+.task-panel{
+
+    background:var(--surface);
+
+    padding:30px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:25px;
+
+}
+
+.task-panel h2{
+
+    margin-bottom:20px;
+
+}
+
+.task-panel input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    font-size:1rem;
+
+}
+
+.button-group{
+
+    margin-top:20px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.button-group button{
+
+    padding:14px 24px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:var(--primary);
+
+    transition:.3s;
+
+}
+
+.button-group button:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* ===================================
+   SEARCH
+=================================== */
+
+.search-filter{
+
+    margin-bottom:25px;
+
+}
+
+.search-filter input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    font-size:1rem;
+
+}
+
+/* ===================================
+   TASK CONTAINER
+=================================== */
+
+.task-container{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    padding:30px;
+
+    box-shadow:var(--shadow);
+
+    min-height:300px;
+
+}
+
+.task-container h2{
+
+    margin-bottom:20px;
+
+}
+
+#taskList{
+
+    list-style:none;
+
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    color:var(--muted);
+
+}
